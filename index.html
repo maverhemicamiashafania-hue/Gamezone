@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#11120f">
+  <meta name="description" content="Gamezone — explore a growing collection of retro-inspired browser games.">
+  <title>Gamezone — Retro Games, New Adventures</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=DM+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="scanlines" aria-hidden="true"></div>
+  <header class="topbar">
+    <a class="logo" href="#home"><span class="logo-icon">G<span>+</span></span><span>GAME<span class="logo-accent">ZONE</span><small>PRESS START TO PLAY</small></span></a>
+    <button class="mobile-menu" aria-label="Toggle menu">☰</button>
+    <nav class="main-nav"><a class="active" href="https://classicgamezone.com/games#google_vignette">Games</a><a href="#systems">Platforms</a><a href="https://classicgamezone.com/about">About</a></nav>
+    <a class="top-cta" href="https://classicgamezone.com/games#google_vignette">Explore library <b>↗</b></a>
+  </header>
+
+  <main id="home">
+    <section class="hero">
+      <div class="hero-grid"></div>
+      <div class="hero-copy">
+        <div class="live-tag"><i></i> PLAYER ONE, YOU'RE UP</div>
+        <h1>RETRO VIBES.<br><em>INFINITE</em><br>PLAY.</h1>
+        <p>Jump into pixel worlds, chase high scores, and rediscover the joy of classic-style gaming. Your next favorite is waiting.</p>
+        <div class="hero-buttons"><a class="btn-primary" href="https://classicgamezone.com/">BROWSE GAMES <span>➜</span></a><a class="btn-ghost" href="#systems">EXPLORE PLATFORMS</a></div>
+        <div class="hero-meta"><span><b>8-BIT</b> ENERGY</span><span class="meta-sep">✦</span><span><b>ALL-NEW</b> ADVENTURES</span><span class="meta-sep">✦</span><span><b>YOUR</b> NEXT LEVEL</span></div>
+      </div>
+      <div class="hero-stage">
+        <div class="stage-glow"></div><div class="pixel-sun"></div>
+        <div class="floating-pixel p1"></div><div class="floating-pixel p2"></div><div class="floating-pixel p3"></div>
+        <div class="arcade-screen"><div class="screen-top"><span>GAMEZONE ARCADE</span><span>● ● ●</span></div><div class="screen-art"><div class="mountain m1"></div><div class="mountain m2"></div><div class="pixel-moon"></div><div class="pixel-hero">G</div><div class="screen-ground"></div><div class="screen-message">PRESS START</div></div><div class="screen-bottom"><span>INSERT COIN</span><span>1UP&nbsp; 000250</span></div></div>
+        <div class="stage-sticker sticker-one">NEW<br>LEVEL!</div><div class="stage-sticker sticker-two">★ PLAYER<br>READY ★</div>
+      </div>
+      <a class="scroll-cue" href="#games">SCROLL TO PLAY <span>↓</span></a>
+    </section>
+
+    <section class="library section-wrap" id="games">
+      <div class="section-title"><div><span class="eyebrow">THE GAME LIBRARY</span><h2>CHOOSE YOUR <em>GAME.</em></h2></div><div class="library-count"><strong>GAMEZONE</strong><span>ARCADE COLLECTION</span></div></div>
+      <div class="toolbar"><label class="searchbox"><span>⌕</span><input id="gameSearch" type="search" placeholder="Search games..." aria-label="Search games"><kbd>⌘ K</kbd></label><div class="filters" role="group" aria-label="Filter games"><button class="filter active" data-filter="all">ALL GAMES</button><button class="filter" data-filter="arcade">ARCADE</button><button class="filter" data-filter="adventure">ADVENTURE</button><button class="filter" data-filter="puzzle">PUZZLE</button><button class="filter" data-filter="racing">RACING</button></div></div>
+      <div class="game-grid" id="gameGrid">
+        <article class="game-card featured-card" data-category="adventure" data-name="pixel quest">
+          <div class="game-art art-quest"><span class="game-tag">FEATURED</span><div class="art-sun"></div><div class="art-hill hill-a"></div><div class="art-hill hill-b"></div><div class="art-character">P</div><span class="art-label">PIXEL<br>QUEST</span></div>
+          <div class="game-info"><div><span class="genre">ADVENTURE</span><h3>Pixel Quest</h3></div><button class="play-button" data-game="Pixel Quest" aria-label="Open Pixel Quest">PLAY <span>▶</span></button></div>
+        </article>
+        <article class="game-card" data-category="racing" data-name="neon racer">
+          <div class="game-art art-racer"><span class="game-tag">HIGH SPEED</span><div class="road"></div><div class="car-shape">▰</div><div class="speed-lines"></div><span class="art-label">NEON<br>RACER</span></div>
+          <div class="game-info"><div><span class="genre">RACING</span><h3>Neon Racer</h3></div><button class="play-button" data-game="Neon Racer" aria-label="Open Neon Racer">PLAY <span>▶</span></button></div>
+        </article>
+        <article class="game-card" data-category="puzzle" data-name="block party">
+          <div class="game-art art-block"><span class="game-tag">BRAIN TEASER</span><div class="blocks"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><span class="art-label">BLOCK<br>PARTY</span></div>
+          <div class="game-info"><div><span class="genre">PUZZLE</span><h3>Block Party</h3></div><button class="play-button" data-game="Block Party" aria-label="Open Block Party">PLAY <span>▶</span></button></div>
+        </article>
+        <article class="game-card" data-category="arcade" data-name="space defenders">
+          <div class="game-art art-space"><span class="game-tag">ARCADE CLASSIC</span><div class="stars">✦　·　✧　·</div><div class="spaceship">▲</div><div class="invaders">▪　▪　▪</div><span class="art-label">SPACE<br>DEFENDERS</span></div>
+          <div class="game-info"><div><span class="genre">ARCADE</span><h3>Space Defenders</h3></div><button class="play-button" data-game="Space Defenders" aria-label="Open Space Defenders">PLAY <span>▶</span></button></div>
+        </article>
+        <article class="game-card" data-category="adventure" data-name="dungeon run">
+          <div class="game-art art-dungeon"><span class="game-tag">DUNGEON MODE</span><div class="torch"></div><div class="door">▥</div><span class="art-label">DUNGEON<br>RUN</span></div>
+          <div class="game-info"><div><span class="genre">ADVENTURE</span><h3>Dungeon Run</h3></div><button class="play-button" data-game="Dungeon Run" aria-label="Open Dungeon Run">PLAY <span>▶</span></button></div>
+        </article>
+        <article class="game-card" data-category="arcade" data-name="fruit frenzy">
+          <div class="game-art art-fruit"><span class="game-tag">QUICK PLAY</span><div class="fruit f1">●</div><div class="fruit f2">●</div><div class="fruit f3">●</div><span class="art-label">FRUIT<br>FRENZY</span></div>
+          <div class="game-info"><div><span class="genre">ARCADE</span><h3>Fruit Frenzy</h3></div><button class="play-button" data-game="Fruit Frenzy" aria-label="Open Fruit Frenzy">PLAY <span>▶</span></button></div>
+        </article>
+      </div>
+      <div class="no-results" id="noResults" hidden>No games match your search. Try another title or category.</div>
+      <div class="library-footer"><span>MORE GAMES ARE ON THE WAY</span><span class="pixel-loader"><i></i><i></i><i></i></span></div>
+    </section>
+
+    <section class="platforms section-wrap" id="systems">
+      <div class="platform-heading"><span class="eyebrow">PICK YOUR ERA</span><h2>ONE ZONE. <em>MANY WORLDS.</em></h2><p>Browse by the kind of gaming experience you love. More platform collections can be added as your library grows.</p></div>
+      <div class="platform-grid">
+        <div class="platform"><span class="platform-icon">▦</span><div><b>ARCADE</b><small>FAST-PACED ACTION</small></div><span class="platform-arrow">↗</span></div>
+        <div class="platform"><span class="platform-icon">▣</span><div><b>8-BIT STYLE</b><small>PIXEL-PERFECT NOSTALGIA</small></div><span class="platform-arrow">↗</span></div>
+        <div class="platform"><span class="platform-icon">◆</span><div><b>ADVENTURE</b><small>EXPLORE NEW WORLDS</small></div><span class="platform-arrow">↗</span></div>
+        <div class="platform"><span class="platform-icon">✣</span><div><b>PUZZLE</b><small>TEST YOUR SKILLS</small></div><span class="platform-arrow">↗</span></div>
+      </div>
+    </section>
+
+    <section class="join section-wrap" id="about"><div class="join-panel"><div class="join-copy"><span class="eyebrow">WELCOME TO GAMEZONE</span><h2>THE NEXT HIGH<br>SCORE IS <em>YOURS.</em></h2><p>Made for curious players, retro fans, and anyone who believes the best adventures start with one button.</p><a class="btn-primary" href="https://classicgamezone.com/">FIND YOUR GAME <span>➜</span></a></div><div class="join-art"><div class="big-coin">GZ</div><span class="coin-spark s-a">✦</span><span class="coin-spark s-b">✧</span><span class="coin-spark s-c">✦</span></div></div></section>
+  </main>
+  <footer class="footer section-wrap"><a class="logo" href="#home"><span class="logo-icon">G<span>+</span></span><span>GAME<span class="logo-accent">ZONE</span><small>PRESS START TO PLAY</small></span></a><span>© <span id="year"></span> GAMEZONE. ALL RIGHTS RESERVED.</span><a href="#home">BACK TO TOP ↑</a></footer>
+
+  <dialog class="game-dialog" id="gameDialog"><button class="dialog-close" aria-label="Close">×</button><div class="dialog-icon">GZ</div><span class="eyebrow">GAMEZONE ARCADE</span><h2 id="dialogTitle">Game preview</h2><p>This is a design preview. To enable gameplay, add a licensed game file or an authorized game embed URL for this title.</p><button class="btn-primary dialog-ok">GOT IT</button></dialog>
+  <script src="script.js"></script>
+</body>
+</html>
